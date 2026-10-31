@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Thumb Promotions - Design Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Brand Colors */
+        .bg-brand-blue { background-color: #0052a5; }
+        .text-brand-blue { color: #0052a5; }
+        .bg-brand-silver { background-color: #e2e8f0; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-4 md:p-8">
+    
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <div class="bg-brand-blue p-8 text-center border-b-8 border-gray-300">
+            <img src="twinnn.jpg" alt="Twin Thumb Promotions Logo" class="h-32 w-32 object-cover mx-auto rounded-full bg-white p-1 mb-4 shadow-lg">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">Design Form</h1>
+            <p class="text-blue-100 mt-2 text-sm md:text-base">Please open and fill out only the sections that apply to your design need. Leave everything else blank.</p>
+        </div>
+
+        <!-- Form Section -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="p-6 md:p-8 space-y-4">
+            
+            <!-- REQUIRED: Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="6ca9acae-2f1a-4207-983a-9a285093ecf9">
+
+            <!-- Basic Client Info (Always Visible) -->
+            <div class="bg-brand-silver p-5 rounded-md mb-6 border-l-4 border-gray-400">
+                <h2 class="text-lg font-bold mb-4 text-gray-800">Your Contact Info</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700">Full Name *</label>
+                        <input type="text" name="Client_Name" class="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700">Email Address *</label>
+                        <input type="email" name="Client_Email" class="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700">Phone Number *</label>
+                        <input type="tel" name="Client_Phone" class="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1: Event Flyer -->
+            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+                    <span class="text-brand-blue text-lg">1. Event Flyer Design</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50">
+                    <div>
+                        <label class="block text-sm font-medium">Event Name / Title Highlight</label>
+                        <input type="text" name="Flyer_Event_Name" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">In Association With / Presents</label>
+                        <input type="text" name="Flyer_Association" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Music By (DJs)</label>
+                        <input type="text" name="Flyer_Music" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Hosted By</label>
+                        <input type="text" name="Flyer_Host" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium">Location</label>
+                        <input type="text" name="Flyer_Location" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Admission Price / Details</label>
+                        <input type="text" name="Flyer_Admission" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Amenities (Cash bar, free food, etc.)</label>
+                        <input type="text" name="Flyer_Amenities" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Photography / Videography By</label>
+                        <input type="text" name="Flyer_Photo" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Preferred Size</label>
+                        <select name="Flyer_Size" class="mt-1 w-full p-2 border border-gray-300 rounded bg-white">
+                            <option value="">Select a Size</option>
+                            <option value="4x6">4x6</option>
+                            <option value="5x7">5x7</option>
+                            <option value="6x9">6x9</option>
+                            <option value="Other">Other / Custom</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium">Other Information</label>
+                        <textarea name="Flyer_Other_Info" rows="3" class="mt-1 w-full p-2 border border-gray-300 rounded"></textarea>
+                    </div>
+                    
+                    <!-- Flyer Sample Gallery -->
+                    <div class="md:col-span-2 mt-4 pt-4 border-t border-gray-200">
+                        <h3 class="text-sm font-bold text-gray-600 mb-3 uppercase tracking-wide">Sample Flyer Designs</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <img src="Flyer1.png" alt="Flyer Sample 1" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="Flyer2.png" alt="Flyer Sample 2" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="Flyer3.png" alt="Flyer Sample 3" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="flyer4.jpg" alt="Flyer Sample 4" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Section 2: Business Card -->
+            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+                    <span class="text-brand-blue text-lg">2. Business Card Design</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50">
+                    <div>
+                        <label class="block text-sm font-medium">Company Name</label>
+                        <input type="text" name="Card_Company" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Your Name & Title</label>
+                        <input type="text" name="Card_Name" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Phone Number</label>
+                        <input type="text" name="Card_Phone" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Website</label>
+                        <input type="text" name="Card_Website" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium">Social Media Handles</label>
+                        <input type="text" name="Card_Socials" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <!-- Business Card Sample Gallery -->
+                    <div class="md:col-span-2 mt-4 pt-4 border-t border-gray-200">
+                        <h3 class="text-sm font-bold text-gray-600 mb-3 uppercase tracking-wide">Sample Business Cards</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <img src="card1.png" alt="Business Card Sample 1" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="card2.png" alt="Business Card Sample 2" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="card3.jpg" alt="Business Card Sample 3" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="card4.jpg" alt="Business Card Sample 4" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Section 3: Banners / Large Format -->
+            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+                    <span class="text-brand-blue text-lg">3. Banner & Large Format Print</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 gap-4 bg-gray-50">
+                    <div>
+                        <label class="block text-sm font-medium">Type of Banner (e.g., Birthday, Step-and-Repeat)</label>
+                        <input type="text" name="Banner_Type" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Exact Dimensions (e.g., 8x8 ft)</label>
+                        <input type="text" name="Banner_Dimensions" class="mt-1 w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">Main Text / Headline to Include</label>
+                        <textarea name="Banner_Text" rows="2" class="mt-1 w-full p-2 border border-gray-300 rounded"></textarea>
+                    </div>
+
+                    <!-- Banner Sample Gallery -->
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h3 class="text-sm font-bold text-gray-600 mb-3 uppercase tracking-wide">Sample Banners</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <img src="banner1.jpg" alt="Banner Sample 1" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="banner2.jpg" alt="Banner Sample 2" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="banner3.jpg" alt="Banner Sample 3" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="banner4.jpg" alt="Banner Sample 4" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Section 4: Other Print Designs -->
+            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+                    <span class="text-brand-blue text-lg">4. Other Custom Designs (Logos, Apparel, etc.)</span>
+                    <span class="transition group-open:rotate-180">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </summary>
+                <div class="text-gray-700 p-5 border-t border-gray-200 bg-gray-50">
+                    <label class="block text-sm font-medium">Please describe what you need (Item type, colors, text, sizes, etc.)</label>
+                    <textarea name="Other_Design_Details" rows="5" class="mt-1 w-full p-2 border border-gray-300 rounded"></textarea>
+                    
+                    <!-- Other Designs Gallery -->
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h3 class="text-sm font-bold text-gray-600 mb-3 uppercase tracking-wide">Other Custom Work</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <img src="custom1.jpg" alt="Custom Sample 1" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="custom2.jpg" alt="Custom Sample 2" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="custom3.jpg" alt="Custom Sample 3" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                            <img src="custom4.jpg" alt="Custom Sample 4" class="w-full h-24 md:h-32 object-cover rounded shadow hover:scale-105 transition-transform duration-200">
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Submit Button -->
+            <div class="pt-6">
+                <button type="submit" class="w-full bg-brand-blue hover:bg-blue-800 text-white text-lg font-bold py-4 px-6 rounded-lg shadow-lg transition duration-200 uppercase tracking-wide">
+                    Submit Design Details
+                </button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
