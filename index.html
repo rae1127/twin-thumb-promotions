@@ -10,6 +10,60 @@
         .bg-brand-blue { background-color: #0052a5; }
         .text-brand-blue { color: #0052a5; }
         .bg-brand-silver { background-color: #e2e8f0; }
+
+/* Animated Background Styles */
+        .bg-animation-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none; /* Prevents images from blocking clicks on the form */
+            background-color: #f3f4f6; /* Tailwind gray-100 base */
+        }
+        .floating-design {
+            position: absolute;
+            opacity: 0.15; /* Keeps the background subtle */
+            animation: drift linear infinite;
+            top: 105vh; /* Start just below the viewport */
+        }
+        @keyframes drift {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-150vh) rotate(360deg); }
+        }
+        /* Stagger the positions, sizes, and speeds for 10 items */
+        .float-1 { left: 5%; animation-duration: 35s; animation-delay: -5s; }
+        .float-2 { left: 20%; animation-duration: 45s; animation-delay: -18s; }
+        .float-3 { left: 35%; animation-duration: 40s; animation-delay: -2s; }
+        .float-4 { left: 50%; animation-duration: 50s; animation-delay: -25s; }
+        .float-5 { left: 65%; animation-duration: 42s; animation-delay: -12s; }
+        .float-6 { left: 80%; animation-duration: 38s; animation-delay: -30s; }
+        .float-7 { left: 10%; animation-duration: 48s; animation-delay: -20s; }
+        .float-8 { left: 45%; animation-duration: 36s; animation-delay: -7s; }
+        .float-9 { left: 75%; animation-duration: 52s; animation-delay: -15s; }
+        .float-10 { left: 90%; animation-duration: 34s; animation-delay: -22s; }
+    </style>
+</head>
+<body class="text-gray-800 font-sans p-4 md:p-8 min-h-screen relative">
+    
+    <!-- Animated Background Container -->
+    <div class="bg-animation-container">
+        <!-- 10 Scattered flowing designs -->
+        <img src="https://picsum.photos/seed/a1/500/500" class="floating-design float-1 shadow-lg" alt="bg-logo">
+        <img src="https://picsum.photos/seed/a2/600/900" class="floating-design float-2 shadow-lg" alt="bg-flyer">
+        <img src="https://picsum.photos/seed/a3/1200/600" class="floating-design float-3 shadow-lg" alt="bg-banner">
+        <img src="https://picsum.photos/seed/a4/500/500" class="floating-design float-4 shadow-lg" alt="bg-card">
+        <img src="https://picsum.photos/seed/a5/600/900" class="floating-design float-5 shadow-lg" alt="bg-flyer2">
+        <img src="https://picsum.photos/seed/a6/1200/600" class="floating-design float-6 shadow-lg" alt="bg-banner2">
+        <img src="https://picsum.photos/seed/a7/500/500" class="floating-design float-7 shadow-lg" alt="bg-logo2">
+        <img src="https://picsum.photos/seed/a8/600/900" class="floating-design float-8 shadow-lg" alt="bg-flyer3">
+        <img src="https://picsum.photos/seed/a9/1200/600" class="floating-design float-9 shadow-lg" alt="bg-banner3">
+        <img src="https://picsum.photos/seed/a10/600/900" class="floating-design float-10 shadow-lg" alt="bg-flyer4">
+    </div>
+  <!-- Main Form Container - added bg-white/95 and backdrop-blur-sm for the glass effect -->
+    <div class="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden relative z-10 border border-white/50">
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans p-4 md:p-8">
