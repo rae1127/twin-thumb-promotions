@@ -10,8 +10,8 @@
         .bg-brand-blue { background-color: #0052a5; }
         .text-brand-blue { color: #0052a5; }
         .bg-brand-silver { background-color: #e2e8f0; }
-
-/* Animated Background Styles */
+        
+        /* Animated Background Styles */
         .bg-animation-container {
             position: fixed;
             top: 0;
@@ -50,25 +50,21 @@
     
     <!-- Animated Background Container -->
     <div class="bg-animation-container">
-        <!-- 10 Scattered flowing designs -->
-        <img src="card1.png" class="floating-design float-1 shadow-lg" alt="bg-logo">
-        <img src="Flyer1.png" class="floating-design float-2 shadow-lg" alt="bg-flyer">
-        <img src="Flyer2.png" class="floating-design float-3 shadow-lg" alt="bg-banner">
-        <img src="Flyer3.png" class="floating-design float-4 shadow-lg" alt="bg-card">
-        <img src="card2.png" class="floating-design float-5 shadow-lg" alt="bg-flyer2">
-        <img src="https://picsum.photos/seed/a6/1200/600" class="floating-design float-6 shadow-lg" alt="bg-banner2">
-        <img src="https://picsum.photos/seed/a7/500/500" class="floating-design float-7 shadow-lg" alt="bg-logo2">
-        <img src="https://picsum.photos/seed/a8/600/900" class="floating-design float-8 shadow-lg" alt="bg-flyer3">
-        <img src="https://picsum.photos/seed/a9/1200/600" class="floating-design float-9 shadow-lg" alt="bg-banner3">
-        <img src="https://picsum.photos/seed/a10/600/900" class="floating-design float-10 shadow-lg" alt="bg-flyer4">
+        <!-- 10 Scattered flowing designs pulling from category samples -->
+        <img src="Flyer1.png" class="floating-design float-1 shadow-lg" alt="bg-flyer1">
+        <img src="card1.png" class="floating-design float-2 shadow-lg" alt="bg-card1">
+        <img src="banner1.jpg" class="floating-design float-3 shadow-lg" alt="bg-banner1">
+        <img src="custom1.jpg" class="floating-design float-4 shadow-lg" alt="bg-custom1">
+        <img src="Flyer2.png" class="floating-design float-5 shadow-lg" alt="bg-flyer2">
+        <img src="card2.png" class="floating-design float-6 shadow-lg" alt="bg-card2">
+        <img src="banner2.jpg" class="floating-design float-7 shadow-lg" alt="bg-banner2">
+        <img src="custom2.jpg" class="floating-design float-8 shadow-lg" alt="bg-custom2">
+        <img src="Flyer3.png" class="floating-design float-9 shadow-lg" alt="bg-flyer3">
+        <img src="banner3.jpg" class="floating-design float-10 shadow-lg" alt="bg-banner3">
     </div>
-  <!-- Main Form Container - added bg-white/95 and backdrop-blur-sm for the glass effect -->
+
+    <!-- Main Form Container - added bg-white/95 and backdrop-blur-sm for the glass effect -->
     <div class="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden relative z-10 border border-white/50">
-    </style>
-</head>
-<body class="bg-gray-100 text-gray-800 font-sans p-4 md:p-8">
-    
-    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
         
         <!-- Header Section -->
         <div class="bg-brand-blue p-8 text-center border-b-8 border-gray-300">
@@ -103,14 +99,14 @@
             </div>
 
             <!-- Section 1: Event Flyer -->
-            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+            <details class="group bg-white/80 border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50/80">
                     <span class="text-brand-blue text-lg">1. Event Flyer Design</span>
                     <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
                     </span>
                 </summary>
-                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50">
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50/50">
                     <div>
                         <label class="block text-sm font-medium">Event Name / Title Highlight</label>
                         <input type="text" name="Flyer_Event_Name" class="mt-1 w-full p-2 border border-gray-300 rounded">
@@ -172,14 +168,14 @@
             </details>
 
             <!-- Section 2: Business Card -->
-            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+            <details class="group bg-white/80 border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50/80">
                     <span class="text-brand-blue text-lg">2. Business Card Design</span>
                     <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
                     </span>
                 </summary>
-                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50">
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50/50">
                     <div>
                         <label class="block text-sm font-medium">Company Name</label>
                         <input type="text" name="Card_Company" class="mt-1 w-full p-2 border border-gray-300 rounded">
@@ -215,14 +211,14 @@
             </details>
 
             <!-- Section 3: Banners / Large Format -->
-            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+            <details class="group bg-white/80 border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50/80">
                     <span class="text-brand-blue text-lg">3. Banner & Large Format Print</span>
                     <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
                     </span>
                 </summary>
-                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 gap-4 bg-gray-50">
+                <div class="text-gray-700 p-5 border-t border-gray-200 grid grid-cols-1 gap-4 bg-gray-50/50">
                     <div>
                         <label class="block text-sm font-medium">Type of Banner (e.g., Birthday, Step-and-Repeat)</label>
                         <input type="text" name="Banner_Type" class="mt-1 w-full p-2 border border-gray-300 rounded">
@@ -250,14 +246,14 @@
             </details>
 
             <!-- Section 4: Other Print Designs -->
-            <details class="group bg-white border border-gray-300 rounded-lg shadow-sm">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50">
+            <details class="group bg-white/80 border border-gray-300 rounded-lg shadow-sm">
+                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 hover:bg-gray-50/80">
                     <span class="text-brand-blue text-lg">4. Other Custom Designs (Logos, Apparel, etc.)</span>
                     <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M19 9l-7 7-7-7"></path></svg>
                     </span>
                 </summary>
-                <div class="text-gray-700 p-5 border-t border-gray-200 bg-gray-50">
+                <div class="text-gray-700 p-5 border-t border-gray-200 bg-gray-50/50">
                     <label class="block text-sm font-medium">Please describe what you need (Item type, colors, text, sizes, etc.)</label>
                     <textarea name="Other_Design_Details" rows="5" class="mt-1 w-full p-2 border border-gray-300 rounded"></textarea>
                     
@@ -284,21 +280,25 @@
         </form>
     </div>
 
-<!-- Full-Size Image Modal -->
-<div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeModal()">
-    <span class="absolute top-4 right-8 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&times;</span>
-    <img id="modalImage" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain" src="" alt="Full Size Design">
-</div>
+    <!-- Full-Size Image Modal (Lightbox) -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeModal()">
+        <span class="absolute top-4 right-8 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&times;</span>
+        <img id="modalImage" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain" src="" alt="Full Size Design">
+    </div>
 
-<script>
-    function openModal(imgSrc) {
-        document.getElementById('modalImage').src = imgSrc;
-        document.getElementById('imageModal').classList.remove('hidden');
-    }
-    function closeModal() {
-        document.getElementById('imageModal').classList.add('hidden');
-    }
-</script>
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
+            // Prevent body from scrolling while modal is open
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            // Restore body scrolling
+            document.body.style.overflow = 'auto'; 
+        }
+    </script>
 
 </body>
 </html>
